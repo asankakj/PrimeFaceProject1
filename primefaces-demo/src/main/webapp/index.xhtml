@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+<f:view contentType="text/html">
+	<h:head>
+	</h:head>
+	<h:body>
+		<h:form>
+			<p:panelGrid columns="2">
+				<f:facet name="header">
+Create Student
+</f:facet>
+				<h:outputLabel value="Reg #: " />
+				<p:inputText id="regNo" value="" />
+				<h:outputLabel value="First Name: " />
+				<p:inputText id="firstName" value="" />
+				<h:outputLabel value="Last Name: " />
+				<p:inputText id="lastName" value="" />
+				<h:outputLabel value="Date of Birth: " />
+				<p:calendar navigator="none" />
+				<h:outputLabel value="NIC: " />
+				<p:inputText id="nic" value="" />
+				<h:outputLabel value="Email: " />
+				<p:inputText id="email" value="" />
+				<h:outputLabel value="Phone No: " />
+				<p:inputText id="phone" value="" />
+				<h:outputLabel value="Address: " />
+				<p:inputTextarea id="address" rows="4" cols="40" />
+				<f:facet name="footer">
+					<p:commandButton value="Submit" icon="ui-icon-check" />
+				</f:facet>
+			</p:panelGrid>
+		</h:form>
+	</h:body>
+</f:view>
+</html>
